@@ -15,9 +15,9 @@ jobs:
       - name: Install packages
         run: |
           brew update > /dev/null && brew install --cask osxfuse
-      - name: Start fuse
-        run: |
-          /Library/Filesystems/osxfuse.fs/Contents/Resources/load_osxfuse
+#      - name: Start fuse
+#        run: |
+#          /Library/Filesystems/osxfuse.fs/Contents/Resources/load_osxfuse
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -56,9 +56,9 @@ jobs:
       - name: Install packages
         run: |
           brew update > /dev/null && brew install --cask macfuse
-      - name: Start fuse
-        run: |
-          /Library/Filesystems/macfuse.fs/Contents/Resources/load_macfuse
+#      - name: Start fuse
+#        run: |
+#          /Library/Filesystems/macfuse.fs/Contents/Resources/load_macfuse
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
